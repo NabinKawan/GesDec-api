@@ -1,0 +1,5 @@
+uvicorn
+guvicorn
+pydantic
+pony
+fastapi
