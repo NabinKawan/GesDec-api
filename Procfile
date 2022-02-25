@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker gesDec_api.app:app
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app

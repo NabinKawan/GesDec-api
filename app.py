@@ -7,8 +7,8 @@ from imp import reload
 from matplotlib.font_manager import json_load
 import uvicorn
 from fastapi import FastAPI
-from routers import model,feedback
-from db import init_db
+from gesDec_api.routers import model,feedback
+from gesDec_api.db import init_db
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -17,7 +17,7 @@ origins = [
 ]
 
 # # Package # #
-from settings import api_settings 
+from gesDec_api.settings import api_settings 
 
 init_db()
 
