@@ -1,7 +1,7 @@
 import uvicorn
 
 # # Package # #
-from settings import api_settings 
+from gesDec_api.settings import api_settings 
 
 def run():
     """Run the API using Uvicorn"""

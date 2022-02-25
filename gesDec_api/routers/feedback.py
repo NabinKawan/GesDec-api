@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from gesDec_api.services import services
+import gesDec_api.services as services
 from gesDec_api.schemas import FeedbackCreate
 
 router = APIRouter(prefix="/feedback", tags=["Feedback"])
