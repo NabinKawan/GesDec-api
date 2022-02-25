@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from repositories import ModelRepository
+from gesDec_api.repositories import ModelRepository
 
 router=APIRouter(
     tags=['Model']
