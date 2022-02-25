@@ -1,5 +1,5 @@
 uvicorn
-guvicorn
+gunicorn
 pydantic
 pony
 fastapi
