@@ -3,4 +3,5 @@ gunicorn
 pydantic
 pony
 python-dotenv
+pydantic[dotenv]
 fastapi
