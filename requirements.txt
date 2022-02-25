@@ -2,4 +2,5 @@ uvicorn
 gunicorn
 pydantic
 pony
+python-dotenv
 fastapi
