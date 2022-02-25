@@ -4,7 +4,6 @@ FastAPI app definition, initialization and definition of routes
 
 # # Installed # #
 from imp import reload
-from matplotlib.font_manager import json_load
 import uvicorn
 from fastapi import FastAPI
 from gesDec_api.routers import model,feedback
