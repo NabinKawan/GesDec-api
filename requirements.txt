@@ -2,7 +2,6 @@ uvicorn[standard]
 gunicorn
 pydantic
 pony
-numpy
 python-dotenv
 pydantic[dotenv]
 fastapi
