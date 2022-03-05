@@ -4,8 +4,8 @@ FastAPI app definition, initialization and definition of routes
 
 # # Installed # #
 from imp import reload
-import uvicorn
-from fastapi import FastAPI
+from Slr import Prediction
+from fastapi import FastAPI, WebSocket
 from gesDec_api.routers import model,feedback
 from gesDec_api.db import init_db
 
@@ -24,6 +24,20 @@ app = FastAPI(
     tags=['Model'],
     title="Gesture-Detection api"
 )
+
+# @app.websocket("/ws")
+# async def websocket_endpoint(websocket: WebSocket):
+#     await websocket.accept()
+#     prediction=Prediction()
+#     while True:
+#         data = await websocket.receive_json()
+#         res=prediction.predict(data["keypoints"])
+#         if(res!=None):
+#             print(res)
+#             await websocket.send_json(res)
+#         # print(base64.b64decode(data))
+#         # print("hi")
+       
 
 app.include_router(model.router)
 app.include_router(feedback.router)
