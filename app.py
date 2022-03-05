@@ -4,7 +4,7 @@ FastAPI app definition, initialization and definition of routes
 
 # # Installed # #
 from imp import reload
-from Slr import Prediction
+# from Slr import Prediction
 from fastapi import FastAPI, WebSocket
 from gesDec_api.routers import model,feedback
 from gesDec_api.db import init_db
