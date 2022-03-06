@@ -18,5 +18,17 @@ class APISettings(BaseSettings):
     class Config(BaseSettings.Config):
         env_prefix = "API_"
 
+class DBSettings(BaseSettings):
+    provider:str
+    user:str
+    password:str
+    host:str
+    port:int
+    database:str
+
+    class Config(BaseSettings.Config):
+        env_prefix = "DB_"
+
 
 api_settings = APISettings()
+db_settings = DBSettings()

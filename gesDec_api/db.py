@@ -1,19 +1,20 @@
 from pony.orm import Database, PrimaryKey, Required
-import os
+# # Package # #
+from gesDec_api.settings import db_settings 
+
 db = Database()
-print("init db")
 
 # def init_local_db():
 #     db.bind(provider='sqlite', filename='db.db',create_db=True)
 #     db.generate_mapping(create_tables=True)
 
 def init_db():
-    db.bind(provider=os.getenv('DB_PROVIDER'),
-                 user=os.getenv('DB_USER'),
-                 password=os.getenv('DB_PASSWORD'),
-                 host=os.getenv('DB_HOST'),
-                 port=int(os.getenv('DB_PORT')),
-                 database=os.getenv('DB_DATABASE'))
+    db.bind(provider=db_settings.provider,
+                 user=db_settings.user,
+                 password=db_settings.password,
+                 host=db_settings.host,
+                 port=db_settings.port,
+                 database=db_settings.database)
     db.generate_mapping(create_tables=True)
 
 if __name__ == '__main__':
