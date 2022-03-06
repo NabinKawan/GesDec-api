@@ -1,4 +1,4 @@
-from gesDec_api.db import db
+from gesdec_api.db import db
 from pony.orm import PrimaryKey, Required, Optional
 
 

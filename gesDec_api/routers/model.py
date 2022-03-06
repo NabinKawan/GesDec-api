@@ -1,5 +1,5 @@
 from fastapi import APIRouter, WebSocket
-from gesDec_api.repositories import ModelRepository
+from gesdec_api.repositories import ModelRepository
 
 router=APIRouter(
     tags=['Model']

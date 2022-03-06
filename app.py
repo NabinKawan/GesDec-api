@@ -7,8 +7,8 @@ from imp import reload
 from dotenv import load_dotenv
 # from Slr import Prediction
 from fastapi import FastAPI, WebSocket
-from gesDec_api.routers import model,feedback
-from gesDec_api.db import init_db
+from gesdec_api.routers import model,feedback
+from gesdec_api.db import init_db
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -17,7 +17,7 @@ origins = [
 ]
 
 # # Package # #
-from gesDec_api.settings import api_settings 
+from gesdec_api.settings import api_settings 
 
 load_dotenv()
 init_db()

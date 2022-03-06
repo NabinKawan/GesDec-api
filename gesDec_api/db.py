@@ -1,6 +1,6 @@
 from pony.orm import Database, PrimaryKey, Required
 # # Package # #
-from gesDec_api.settings import db_settings 
+from gesdec_api.settings import db_settings 
 
 db = Database()
 

@@ -1,7 +1,7 @@
 from fastapi.responses import FileResponse
 
 class ModelRepository:
-    path='gesDec_api/model-files'
+    path='gesdec_api/model-files'
     
     @staticmethod
     def get_model():

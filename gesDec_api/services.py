@@ -1,6 +1,6 @@
 from pony.orm import db_session
-from gesDec_api.schemas import FeedbackCreate
-from gesDec_api.models import Feedback
+from gesdec_api.schemas import FeedbackCreate
+from gesdec_api.models import Feedback
 
 @db_session
 def create_feedback(feedback_ob: FeedbackCreate):
