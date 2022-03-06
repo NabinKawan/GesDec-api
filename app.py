@@ -4,6 +4,7 @@ FastAPI app definition, initialization and definition of routes
 
 # # Installed # #
 from imp import reload
+from dotenv import load_dotenv
 # from Slr import Prediction
 from fastapi import FastAPI, WebSocket
 from gesDec_api.routers import model,feedback
@@ -18,6 +19,7 @@ origins = [
 # # Package # #
 from gesDec_api.settings import api_settings 
 
+load_dotenv()
 init_db()
 
 app = FastAPI(

@@ -11,7 +11,7 @@ class BaseSettings(pydantic.BaseSettings):
 
 
 class APISettings(BaseSettings):
-    title: str = "People API"
+    title: str = "GesDec API"
     host: str = "localhost"
     port: int = 8000
 

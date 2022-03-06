@@ -2,6 +2,8 @@ uvicorn[standard]
 gunicorn
 pydantic
 pony
+psycopg2
+os
 python-dotenv
 pydantic[dotenv]
 fastapi

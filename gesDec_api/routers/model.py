@@ -16,7 +16,7 @@ def _get_shar1of1():
     return ModelRepository._get_shar1of1()
 
 
-        # await websocket.send_text(f"Message text was: {data}")
+# await websocket.send_text(f"Message text was: {data}")
 # @router.get("/group1-shard2of3.bin")
 # def _get_shard2of3():
 #     return ModelRepository._get_shar2of3()
