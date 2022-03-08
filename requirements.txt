@@ -6,3 +6,4 @@ psycopg2
 python-dotenv
 pydantic[dotenv]
 fastapi
+mtcnn

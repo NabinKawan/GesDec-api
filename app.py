@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 # from Slr import Prediction
 from fastapi import FastAPI, WebSocket
 from gesdec_api.routers import model,feedback
+from attendence_api.routers import attendence
 from gesdec_api.db import init_db
 
 from fastapi.middleware.cors import CORSMiddleware
@@ -43,6 +44,9 @@ app = FastAPI(
 
 app.include_router(model.router)
 app.include_router(feedback.router)
+
+# attendence api
+app.include_router(attendence.router)
 
 app.add_middleware(
     CORSMiddleware,
